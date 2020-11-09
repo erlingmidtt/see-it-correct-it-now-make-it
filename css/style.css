@@ -153,6 +153,7 @@ h1 {
 h2{
     text-align: center;
     text-transform: uppercase;
+    cursor: default;
 }
 .bold_link {
     font-weight: bold;

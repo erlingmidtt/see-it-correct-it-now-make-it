@@ -62,5 +62,29 @@ footer {
 color: #ff0000;
 }
 .card{
-    
+    background-color: #ffffff;
+    box-shadow: 3px 3px 5px lightgrey;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+.class{
+    background-color: #ffffff;
+    box-shadow: 3px 3px 5px lightgrey;
+    width: 25%;
+    length: 20%
+}
+h2{
+    text-align: center;
+}
+.bold_link {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-emphasis: uppercase;
+    text-align: center;
 }

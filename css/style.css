@@ -43,14 +43,12 @@ nav img{
 footer img{
     height: 100px;
     width: auto;
+    margin-top: 30%;
 }
-
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 80% 20%;
     background-color: #1b1b1b;
-    color: #FFFEFB;
     padding-top: 5px;
     padding-bottom: 5px;
     height: auto;
@@ -58,6 +56,14 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+.footer-a{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    align-items: center;
 }
 .links li, a{
     list-style: none;
@@ -163,4 +169,17 @@ h2{
     list-style: none;
     margin-bottom: 5px;
     margin-left: -10px;
+}
+.footer-txt{
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer-txt:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+.footer_txt{
+    color: #ffffff;
+    text-align: center;
 }

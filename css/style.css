@@ -67,6 +67,25 @@ color: #ff0000;
     margin-bottom: 3%;
     margin-right: 3%;
 }
+.herodisplay{
+    background-color: #1b1b1b;
+    box-shadow: 3px 3px 5px lightgrey;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.hero-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
 .class{
     background-color: #ffffff;
     box-shadow: 3px 3px 5px lightgrey;
@@ -84,7 +103,7 @@ h2{
 a{
     text-decoration: none;
 }
-h1{
+h1 {
     text-emphasis: uppercase;
     text-align: center;
 }

@@ -57,7 +57,7 @@ footer {
 }
 .links li, a{
     list-style: none;
-    color: #ffffff;
+    color: #000000;
 }
 .links li, a:hover{
 color: #ff0000;

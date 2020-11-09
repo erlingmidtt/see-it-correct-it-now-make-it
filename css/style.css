@@ -39,6 +39,7 @@ nav a:hover{
 nav img{
     height: 80px;
     width: auto;
+    margin-top: 10px;
 }
 footer img{
     height: 100px;
@@ -182,4 +183,8 @@ h2{
 .footer_txt{
     color: #ffffff;
     text-align: center;
+}
+.contact-links{
+    font-size: larger;
+    text-transform: uppercase;
 }

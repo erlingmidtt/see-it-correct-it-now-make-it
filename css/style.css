@@ -82,6 +82,9 @@ footer {
     width: 95%;
     grid-template-columns: 80% 20%;
     }
+.gridL{
+    margin-right: 3%;
+}
 .links li, a{
     list-style: none;
     color: #000000;
@@ -93,7 +96,6 @@ color: #ff0000;
     background-color: #ffffff;
     box-shadow: 3px 3px 5px lightgrey;
     margin-bottom: 5%;
-    margin-right: 3%;
     display: flex;
     flex-direction: column;
     padding-top: 2px;
@@ -106,8 +108,6 @@ color: #ff0000;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-
-    margin-right: 3%;
 }
 .class{
     background-color: #ffffff;
@@ -130,13 +130,11 @@ color: #ff0000;
     background-color: #ffffff;
     box-shadow: 3px 3px 5px lightgrey;
     margin-bottom: 1%;
-    margin-right: 3%;
 }
 .herodisplay{
     background-color: #1b1b1b;
     box-shadow: 3px 3px 5px lightgrey;
     margin-bottom: 3%;
-    margin-right: 3%;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -145,13 +143,13 @@ color: #ff0000;
     height: 100%;
     width: 100%;
 }
-.hero-top{
+.hero-bottom{
     display: flex;
     justify-content: space-around;
     align-items: center;
     cursor: default;
 }
-.hero-bottom{
+.hero-top{
     display: flex;
     justify-content: center;
 }
@@ -222,3 +220,25 @@ h2{
 .class-img:hover{
     opacity: .85;
 }
+
+@media only screen and (max-width: 1250px) {
+    [class="grid"] {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 95%;
+    grid-template-columns: 1fr;
+}
+@media only screen and (max-width: 1250px) {
+    [class="gridL"]{
+        margin-right: 0%;
+    }
+    @media only screen and (max-width: 1250px) {
+        [class="gridR"]{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 3%;
+        }

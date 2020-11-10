@@ -33,8 +33,13 @@ nav a {
     padding: 2px;
     text-transform: uppercase;
 }
-main {
-    margin-top: 150px;
+.nav-links{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
 }
 nav a {
     color: #ffffff;
@@ -49,6 +54,59 @@ nav img{
     width: auto;
     margin-top: 10px;
 }
+.burger{
+    padding: 15px;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.burger{
+    display: none;
+}
+@media screen and (max-width:1250px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 7vh;
+        background-color: #1b1b1b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform:translateX(100%);
+        transition: transform 0.2s ease-in;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:730px){
+    .nav-links{
+        width: 100%;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
 footer img{
     height: 100px;
     width: auto;
@@ -73,6 +131,9 @@ footer {
     margin-right: 5%;
     margin-top: 1%;
     align-items: center;
+}
+main {
+    margin-top: 150px;
 }
 .grid{
     display: grid;
@@ -234,7 +295,6 @@ h2{
     .gridL{
         margin-right: 0%;
     }
-@media only screen and (max-width: 1250px) {
     .gridR{
         margin-top: 10%;
         margin-bottom: 10%;
@@ -242,6 +302,7 @@ h2{
             grid-template-columns: 1fr 1fr;
             column-gap: 3%;
         }
+    }
 @media only screen and (max-width: 730px) {
     .gridR{
         margin-top: 10%;
@@ -250,7 +311,6 @@ h2{
             grid-template-columns: 1fr;
             column-gap: 3%;
         }
-@media only screen and (max-width: 730px) {
     .classes{
         margin-top: 10%;
         margin-bottom: 10%;
@@ -262,8 +322,6 @@ h2{
         flex-direction: column;
         align-items: stretch;
         }
-    }
-@media only screen and (max-width: 730px) {
     .class{
         width: 100%;
         padding-right: 0%;
@@ -271,12 +329,11 @@ h2{
         padding-left: 0%;
         margin-bottom: 7%;
     }
-
-@media only screen and (max-width: 730px) {
     .class_1{
         width: 100%;
         margin-bottom: 7%;
     }
+}
 
 @media only screen and (max-width: 550px) {
     [class="gridR"]{
